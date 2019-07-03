@@ -4,7 +4,7 @@ echo "[INFO] Date 03/07/2019"
 
 mkdir $1
 cd $1
-
+pip3 install virtualenv 
 echo "[INFO] Creating Virtual Environment"
 virtualenv -p python3 venv
 
@@ -15,6 +15,8 @@ path=$PWD/models/research/
 
 
 source venv/bin/activate
+
+
 
 echo "[INFO] Installing Packages"
 if [ "$2" == "cpu" ]
